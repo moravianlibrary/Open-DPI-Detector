@@ -1,0 +1,38 @@
+﻿Build started 19. 5. 2012 15:33:06.
+     1>Project "C:\Users\Michal\Documents\Visual Studio 2010\Projects\DPIApplicationGUI\OpenDpiDetector\OpenDpiDetector.vcxproj" on node 2 (build target(s)).
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(298,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>InitializeBuildStatus:
+         Touching ".\Release\intermediate\OpenDpiDetector.unsuccessfulbuild".
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Release\OpenDpiDetector.exe" /NOLOGO /LIBPATH:".\Libraries\ImageMagick-6.7.6\VisualMagick\lib\\" /LIBPATH:".\Libraries\Qt-4.8.1\lib" CORE_RL_bzlib_.lib CORE_RL_coders_.lib CORE_RL_filters_.lib CORE_RL_jbig_.lib CORE_RL_jp2_.lib CORE_RL_jpeg_.lib CORE_RL_lcms_.lib CORE_RL_libxml_.lib CORE_RL_magick_.lib CORE_RL_Magick++_.lib CORE_RL_png_.lib CORE_RL_tiff_.lib CORE_RL_ttf_.lib CORE_RL_wand_.lib CORE_RL_xlib_.lib CORE_RL_zlib_.lib CORE_RL_wmf_.lib kernel32.lib user32.lib gdi32.lib odbc32.lib odbccp32.lib ole32.lib oleaut32.lib winmm.lib wsock32.lib advapi32.lib cv210.lib cxcore210.lib highgui210.lib qtmain.lib QtCore4.lib QtGui4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Release\intermediate\OpenDpiDetector.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"./OpenDpiDetectorI.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Release\OpenDpiDetector.lib" /MACHINE:X86 .\Release\intermediate\DetectionCore.obj
+         .\Release\intermediate\Dialog.obj
+         .\Release\intermediate\DPIManager.obj
+         .\Release\intermediate\DPIWriter.obj
+         .\Release\intermediate\main.obj
+         .\Release\intermediate\WorkerThread.obj
+         Release\intermediate\moc_Dialog.obj
+         Release\intermediate\moc_WorkerThread.obj
+            Creating library .\Release\OpenDpiDetector.lib and object .\Release\OpenDpiDetector.exp
+     1>CORE_RL_coders_.lib(url.obj) : warning LNK4049: locally defined symbol _xmlFree imported
+     1>CORE_RL_coders_.lib(svg.obj) : warning LNK4049: locally defined symbol _xmlFree imported
+     1>CORE_RL_coders_.lib(msl.obj) : warning LNK4049: locally defined symbol _xmlFree imported
+     1>CORE_RL_coders_.lib(svg.obj) : warning LNK4049: locally defined symbol _xmlMalloc imported
+     1>CORE_RL_coders_.lib(msl.obj) : warning LNK4217: locally defined symbol _xmlMalloc imported in function _MSLStartElement
+     1>moc_WorkerThread.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'moc_WorkerThread.obj' or at 'C:\Users\Michal\Documents\Visual Studio 2010\Projects\DPIApplicationGUI\OpenDpiDetector\vc100.pdb'; linking object as if no debug info
+     1>moc_Dialog.obj : warning LNK4099: PDB 'vc100.pdb' was not found with 'moc_Dialog.obj' or at 'C:\Users\Michal\Documents\Visual Studio 2010\Projects\DPIApplicationGUI\OpenDpiDetector\vc100.pdb'; linking object as if no debug info
+         OpenDpiDetector.vcxproj -> C:\Users\Michal\Documents\Visual Studio 2010\Projects\DPIApplicationGUI\OpenDpiDetector\.\Release\OpenDpiDetector.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:".\Release\OpenDpiDetector.exe;#1" /manifest .\Release\intermediate\OpenDpiDetector.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file ".\Release\intermediate\OpenDpiDetector.unsuccessfulbuild".
+         Touching ".\Release\intermediate\OpenDpiDetector.lastbuildstate".
+     1>Done Building Project "C:\Users\Michal\Documents\Visual Studio 2010\Projects\DPIApplicationGUI\OpenDpiDetector\OpenDpiDetector.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.61

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3B53BEDD-FAED-432F-853D-9AEF583C74A2}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <ProjectName>OpenDpiDetector</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Release</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Release\DPIApplicationGui</IntDir>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Libraries\OpenCV-2.1\include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Libraries\OpenCV-2.1\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+    <SourcePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Libraries\OpenCV-2.1\src\cv;.\Libraries\OpenCV-2.1\src\cvaux;.\Libraries\OpenCV-2.1\src\cxcore;.\Libraries\OpenCV-2.1\src\highgui;.\Libraries\OpenCV-2.1\src\ml;$(VCInstallDir)atlmfc\src\mfc;$(VCInstallDir)atlmfc\src\mfcm;$(VCInstallDir)atlmfc\src\atl;$(VCInstallDir)crt\src;</SourcePath>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\intermediate</IntDir>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Libraries\OpenCV-2.1\include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Libraries\OpenCV-2.1\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+    <SourcePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Libraries\OpenCV-2.1\src\cv;.\Libraries\OpenCV-2.1\src\cvaux;.\Libraries\OpenCV-2.1\src\cxcore;.\Libraries\OpenCV-2.1\src\highgui;.\Libraries\OpenCV-2.1\src\ml;$(VCInstallDir)atlmfc\src\mfc;$(VCInstallDir)atlmfc\src\mfcm;$(VCInstallDir)atlmfc\src\atl;$(VCInstallDir)crt\src;</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\Libraries\ImageMagick-6.7.6;.\Libraries\ImageMagick-6.7.6\xlib;.\Libraries\ImageMagick-6.7.6\Magick++\lib;.\Libraries\ImageMagick-6.7.6\;.\Libraries\ImageMagick-6.7.6\magick;.\Libraries\ImageMagick-6.7.6\Magick++;.\Libraries\ImageMagick-6.7.6\Magick++\demo;.\Libraries\ImageMagick-6.7.6\Magick++\lib;.\Libraries\ImageMagick-6.7.6\Magick++\lib\Magick++;.\Libraries\ImageMagick-6.7.6\Magick++\tests;.\GeneratedFiles;.\Libraries\Qt-4.8.1\include;.\GeneratedFiles\$(ConfigurationName);.\Libraries\Qt-4.8.1\include\QtCore;.\Libraries\Qt-4.8.1\include\QtGui;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\DPIApplication.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\Libraries\ImageMagick-6.7.6\VisualMagick\lib\;.\Libraries\Qt-4.8.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>CORE_RL_bzlib_.lib;CORE_RL_coders_.lib;CORE_RL_filters_.lib;CORE_RL_jbig_.lib;CORE_RL_jp2_.lib;CORE_RL_jpeg_.lib;CORE_RL_lcms_.lib;CORE_RL_libxml_.lib;CORE_RL_magick_.lib;CORE_RL_Magick++_.lib;CORE_RL_png_.lib;CORE_RL_tiff_.lib;CORE_RL_ttf_.lib;CORE_RL_wand_.lib;CORE_RL_xlib_.lib;CORE_RL_zlib_.lib;CORE_RL_wmf_.lib;kernel32.lib;user32.lib;gdi32.lib;odbc32.lib;odbccp32.lib;ole32.lib;oleaut32.lib;winmm.lib;wsock32.lib;advapi32.lib;cv210.lib;cxcore210.lib;highgui210.lib;qtmaind.lib;QtCored4.lib;QtGuid4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>NOPCH;NDEBUG;_CONSOLE;WIN32;_VISUALC_;NeedFunctionPrototypes;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\Libraries\ImageMagick-6.7.6;.\Libraries\ImageMagick-6.7.6\Magick++\lib;.\Libraries\ImageMagick-6.7.6\magick;.\Libraries\ImageMagick-6.7.6\Magick++;.\Libraries\ImageMagick-6.7.6\Magick++\lib\Magick++;.\GeneratedFiles;.\Libraries\Qt-4.8.1\include;.\GeneratedFiles\$(ConfigurationName);.\Libraries\Qt-4.8.1\include\QtCore;.\Libraries\Qt-4.8.1\include\QtGui;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Release\OpenDpiDetector.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\Libraries\ImageMagick-6.7.6\VisualMagick\lib\;.\Libraries\Qt-4.8.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>CORE_RL_bzlib_.lib;CORE_RL_coders_.lib;CORE_RL_filters_.lib;CORE_RL_jbig_.lib;CORE_RL_jp2_.lib;CORE_RL_jpeg_.lib;CORE_RL_lcms_.lib;CORE_RL_libxml_.lib;CORE_RL_magick_.lib;CORE_RL_Magick++_.lib;CORE_RL_png_.lib;CORE_RL_tiff_.lib;CORE_RL_ttf_.lib;CORE_RL_wand_.lib;CORE_RL_xlib_.lib;CORE_RL_zlib_.lib;CORE_RL_wmf_.lib;kernel32.lib;user32.lib;gdi32.lib;odbc32.lib;odbccp32.lib;ole32.lib;oleaut32.lib;winmm.lib;wsock32.lib;advapi32.lib;cv210.lib;cxcore210.lib;highgui210.lib;qtmain.lib;QtCore4.lib;QtGui4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ProgramDatabaseFile>./OpenDpiDetectorI.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DetectionCore.cpp" />
+    <ClCompile Include="Dialog.cpp" />
+    <ClCompile Include="DPIManager.cpp" />
+    <ClCompile Include="DPIWriter.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="WorkerThread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_opendpigui.h" />
+    <ClInclude Include="IllegalParameterException.h" />
+    <ClInclude Include="ProgressListener.h" />
+    <ClInclude Include="EnumTypes.h" />
+    <ClInclude Include="OperationFinishedEvent.h" />
+    <ClInclude Include="OperationFinishedListener.h" />
+    <ClInclude Include="ProgressEvent.h" />
+    <CustomBuild Include="WorkerThread.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Libraries\Qt-4.8.1\bin\moc.exe;%(FullPath);.\Libraries\Qt-4.8.1\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing WorkerThread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">".\Libraries\Qt-4.8.1\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_UNICODE "-I." "-I.\Libraries\ImageMagick-6.7.6" "-I.\Libraries\ImageMagick-6.7.6\xlib" "-I.\Libraries\ImageMagick-6.7.6\Magick++\lib" "-I.\Libraries\ImageMagick-6.7.6" "-I.\Libraries\ImageMagick-6.7.6\magick" "-I.\Libraries\ImageMagick-6.7.6\Magick++" "-I.\Libraries\ImageMagick-6.7.6\Magick++\demo" "-I.\Libraries\ImageMagick-6.7.6\Magick++\lib\Magick++" "-I.\Libraries\ImageMagick-6.7.6\Magick++\tests" "-I.\GeneratedFiles" "-I.\Libraries\Qt-4.8.1\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I.\Libraries\Qt-4.8.1\include\QtCore" "-I.\Libraries\Qt-4.8.1\include\QtGui" "-I." "-I." "-I." "-I." "-I."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Libraries\Qt-4.8.1\bin\moc.exe;%(FullPath);.\Libraries\Qt-4.8.1\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing WorkerThread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">".\Libraries\Qt-4.8.1\bin\moc.exe"   -DNOPCH -DNDEBUG -D_CONSOLE -DWIN32 -D_VISUALC_ -DNeedFunctionPrototypes -D_CRT_SECURE_NO_WARNINGS -D_CRT_NONSTDC_NO_WARNINGS -D_LIB -D_UNICODE -DUNICODE  "-I." "-I.\Libraries\ImageMagick-6.7.6" "-I.\Libraries\ImageMagick-6.7.6\Magick++\lib" "-I.\Libraries\ImageMagick-6.7.6\magick" "-I.\Libraries\ImageMagick-6.7.6\Magick++" "-I.\Libraries\ImageMagick-6.7.6\Magick++\lib\Magick++" "-I.\GeneratedFiles" "-I.\Libraries\Qt-4.8.1\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I.\Libraries\Qt-4.8.1\include\QtCore" "-I.\Libraries\Qt-4.8.1\include\QtGui" "-I." "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="Dialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Libraries\Qt-4.8.1\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing Dialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">".\Libraries\Qt-4.8.1\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_UNICODE "-I." "-I.\Libraries\ImageMagick-6.7.6" "-I.\Libraries\ImageMagick-6.7.6\xlib" "-I.\Libraries\ImageMagick-6.7.6\Magick++\lib" "-I.\Libraries\ImageMagick-6.7.6" "-I.\Libraries\ImageMagick-6.7.6\magick" "-I.\Libraries\ImageMagick-6.7.6\Magick++" "-I.\Libraries\ImageMagick-6.7.6\Magick++\demo" "-I.\Libraries\ImageMagick-6.7.6\Magick++\lib\Magick++" "-I.\Libraries\ImageMagick-6.7.6\Magick++\tests" "-I.\GeneratedFiles" "-I.\Libraries\Qt-4.8.1\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I.\Libraries\Qt-4.8.1\include\QtCore" "-I.\Libraries\Qt-4.8.1\include\QtGui" "-I." "-I." "-I." "-I." "-I."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Libraries\Qt-4.8.1\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing Dialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">".\Libraries\Qt-4.8.1\bin\moc.exe"   -DNOPCH -DNDEBUG -D_CONSOLE -DWIN32 -D_VISUALC_ -DNeedFunctionPrototypes -D_CRT_SECURE_NO_WARNINGS -D_CRT_NONSTDC_NO_WARNINGS -D_LIB -D_UNICODE -DUNICODE  "-I." "-I.\Libraries\ImageMagick-6.7.6" "-I.\Libraries\ImageMagick-6.7.6\Magick++\lib" "-I.\Libraries\ImageMagick-6.7.6\magick" "-I.\Libraries\ImageMagick-6.7.6\Magick++" "-I.\Libraries\ImageMagick-6.7.6\Magick++\lib\Magick++" "-I.\GeneratedFiles" "-I.\Libraries\Qt-4.8.1\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I.\Libraries\Qt-4.8.1\include\QtCore" "-I.\Libraries\Qt-4.8.1\include\QtGui" "-I." "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="DetectionCore.h" />
+    <ClInclude Include="DetectionFailureException.h" />
+    <ClInclude Include="DPIManager.h" />
+    <ClInclude Include="DPIRuntimeException.h" />
+    <ClInclude Include="DPIWriter.h" />
+    <ClInclude Include="FileManipulationException.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="opendpigui.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Libraries\Qt-4.8.1\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">".\Libraries\Qt-4.8.1\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Libraries\Qt-4.8.1\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">".\Libraries\Qt-4.8.1\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="Release\intermediate\moc_Dialog.obj" />
+    <Object Include="Release\intermediate\moc_WorkerThread.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="opendpidetector_cs.ts" />
+    <None Include="opendpidetector_en.ts" />
+    <None Include="opendpidetector_sk.ts" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" RccDir=".\GeneratedFiles" lupdateOnBuild="0" lupdateOptions="" lreleaseOptions="" QtVersion_x0020_Win32="4.8.1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
