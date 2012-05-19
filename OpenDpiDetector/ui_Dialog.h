@@ -236,8 +236,8 @@ public:
 
 namespace Ui {
     class dialogClass: public Ui_DialogClass {};
-} // namespace Ui*/
+} // namespace Ui
 
 QT_END_NAMESPACE
-
+*/
 #endif // UI_DIALOG_H
