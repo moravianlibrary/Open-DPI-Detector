@@ -1,3 +1,4 @@
+///THIS FILE SHOULD BE REMOVED
 #ifndef UI_DIALOG_H
 #define UI_DIALOG_H
 
@@ -18,6 +19,10 @@
 #include <QtGui/QTextBrowser>
 #include <QtGui/QWidget>
 
+///THIS FILE IS NOT USED
+///INSTEAD OF THIS IS USED AUTO-GENERATED UI IN GENERATED FILES
+///THIS FILE SHOULD BE REMOVED
+/*
 QT_BEGIN_NAMESPACE
 
 class Ui_DialogClass
@@ -231,7 +236,7 @@ public:
 
 namespace Ui {
     class dialogClass: public Ui_DialogClass {};
-} // namespace Ui
+} // namespace Ui*/
 
 QT_END_NAMESPACE
 
